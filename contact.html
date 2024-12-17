@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Art Stories</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle" onclick="toggleDarkMode()">🌙</button> <!-- Dark mode toggle -->
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Ready to work with me?</h2>
+            <form id="contact-form">
+                <!-- Email Input -->
+                <label for="email">Your Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Insert Your Email Address" required>
+
+                <!-- Message Textarea -->
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Insert Your Message" required></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Submit Message</button>
+            </form>
+
+            <!-- Thank You / Sent Message Box -->
+            <div id="sent-message" class="sent-message">
+                <p>Your message has been sent successfully!</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="mailto:someone@example.com">
+                    <img src="images/email-icon.png" alt="Email">
+                </a>
+                <a href="https://www.etsy.com" target="_blank">
+                    <img src="images/etsy-icon.png" alt="Etsy">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Art Stories. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
